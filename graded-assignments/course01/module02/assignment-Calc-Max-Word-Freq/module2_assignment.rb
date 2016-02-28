@@ -86,9 +86,9 @@ class Solution
   #* Create an array of LineAnalyzers for each line in the file
   def analyze_file
     line_number = 1
+    #check files exists, read and put in @analyzers variable
     if File.exist?("test.txt")
-      #check files exists, read and put in @analyzers variable
-      file = File.open("test.txt", "r") do |f|
+      File.open("test.txt", "r") do |f|
         f.each_line do |line|
           @analyzers << LineAnalyzer.new(line, line_number)
           line_number += 1
@@ -123,7 +123,7 @@ class Solution
   # def print_highest_word_frequency_across_lines
   def print_highest_word_frequency_across_lines
     @highest_count_words_across_lines.each do |obj|
-      puts "#{obj.highest_wf_words} (appears in line #{obj.line_number})"
+      puts "Highest frequency: line #{obj.line_number}: #{obj.highest_wf_words}"
     end
   end
 end
