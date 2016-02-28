@@ -45,16 +45,16 @@ class LineAnalyzer
     if temp_words.values.count(@highest_wf_count) == temp_words.values.length
       @highest_wf_words.concat(temp_words.keys) #concat to store string that most repeated
     elsif temp_words.values.count(@highest_wf_count) != 1
-      index = 0
+      i = 0
       temp_words.values.each do |hightest_frequency|
         if hightest_frequency == @highest_wf_count
-          @highest_wf_words << temp_words.keys[index]
+          @highest_wf_words << temp_words.keys[i]
         end
-        index += 1
+        i += 1
       end
     else
-      index = temp_words.values.index(@highest_wf_count)
-      @highest_wf_words << temp_words.keys[index]
+      i = temp_words.values.index(@highest_wf_count)
+      @highest_wf_words << temp_words.keys[i]
     end
   end
 end
