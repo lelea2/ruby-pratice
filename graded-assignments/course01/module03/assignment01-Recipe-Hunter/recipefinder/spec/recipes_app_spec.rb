@@ -20,7 +20,7 @@ describe "Recipes App" do
 
   context "visit root" do
     before { visit '/' }
-    
+
     it "displays chocolate (default)" do
       expect(page).to have_content 'Chocolate'
     end
