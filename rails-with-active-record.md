@@ -1,3 +1,5 @@
+#### Module1
+
 ##### Scaffolding
 
 * Code generator for entities
@@ -35,6 +37,27 @@ sqlite> .headers on
 sqlite> .mode columns
 ```
 
-##### Migration
+##### DB Migration
 
 * Ruby classes that extend ActiveRecord:Migration
+* Migration code maintains a table called ***schema_miragtions*** table with one column called version
+* Once the migration is applied, its version (timestamp) goes into the schema_migrations table
+
+* def up ==> generate db schema changes
+* def down ==> undo the chanegs introduced by the up method
+* normally, "change" method is used
+
+##### Type mapping
+* :binary
+* :boolean
+* :date
+* :datetime
+* :decimal
+* :float
+* :integer
+* :string
+* :text
+* :time
+
+* null: true/false ==> false - a not null constraint is added
+* limitL: size ==> sets a limit on the size of the field
