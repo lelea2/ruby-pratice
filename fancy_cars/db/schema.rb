@@ -11,9 +11,9 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160808060445) do
+ActiveRecord::Schema.define(version: 20160808071536) do
 
-  create_table "cards", force: :cascade do |t|
+  create_table "cars", force: :cascade do |t|
     t.string   "make"
     t.string   "color"
     t.integer  "year"

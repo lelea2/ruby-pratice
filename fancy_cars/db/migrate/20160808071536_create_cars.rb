@@ -1,6 +1,6 @@
-class CreateCards < ActiveRecord::Migration
+class CreateCars < ActiveRecord::Migration
   def change
-    create_table :cards do |t|
+    create_table :cars do |t|
       t.string :make
       t.string :color
       t.integer :year
