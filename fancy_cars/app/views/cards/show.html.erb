@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Make:</strong>
+  <%= @card.make %>
+</p>
+
+<p>
+  <strong>Color:</strong>
+  <%= @card.color %>
+</p>
+
+<p>
+  <strong>Year:</strong>
+  <%= @card.year %>
+</p>
+
+<%= link_to 'Edit', edit_card_path(@card) %> |
+<%= link_to 'Back', cards_path %>
