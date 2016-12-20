@@ -1,6 +1,6 @@
 class Api::V1::UsersController < ApplicationController
   respond_to :json
-  skip_before_filter  :verify_authenticity_token
+  skip_before_filter :verify_authenticity_token
 
   ### Get User
   def show
