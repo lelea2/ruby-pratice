@@ -23,6 +23,15 @@ $ rails _version_ new application_name
 $ rails _4.2.4_ new railsapi -d postgresql --skip-bundle
 ```
 
+##### Other useful commands
+
+```
+rails --version
+
+rails new api_app_name --api
+
+gem install libv8 -v 3.16.14.13 -- --with-system-v8
+```
 
 ##### Good reads
 
